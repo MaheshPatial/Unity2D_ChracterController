@@ -24,10 +24,10 @@ public class PlayerMovement : MonoBehaviour {
 			jump = true;
 		}
 
-		if (Input.GetButtonDown("Crouch"))
+		if (CrossPlatformInputManager.GetButtonDown("Crouch"))
 		{
 			crouch = true;
-		} else if (Input.GetButtonUp("Crouch"))
+		} else if (CrossPlatformInputManager.GetButtonDown("Crouch"))
 		{
 			crouch = false;
 		}
